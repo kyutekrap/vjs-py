@@ -14,7 +14,7 @@ class TableCell(TypedDict):
     href: NotRequired[str]
     checked: NotRequired[bool]
     editable: NotRequired[bool]
-    list: List[str]
+    list: NotRequired[List[str]]
     textAlign: NotRequired[Literal["left", "center", "right"]]
     events: NotRequired[Dict[Literal["click", "change"], HTMLCallable]]
 
